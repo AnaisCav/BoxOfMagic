@@ -1,12 +1,20 @@
-import Home from "./pages/Home";
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import AppRoutes from "./routes/AppRoutes";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <div className=" bg-almostBlack">
+        <Navbar />
+        <AppRoutes />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
