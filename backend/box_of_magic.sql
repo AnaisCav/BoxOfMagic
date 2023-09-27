@@ -212,4 +212,84 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Bijoux',
   '',
   '../src/assets/images/bijoux/deathlyhallows.webp'
+), (
+  'Valise', 
+  'La valise classique pour pouvoir amener tout ce qu''il faut pour passer une bonne année scolaire', 
+  4,
+  'Mornilles',
+  'Accessoires',
+  '',
+  '../src/assets/images/accessoires/trunk.webp'
+), (
+  'Valise pour élève de Griffondor', 
+  'La valise spéciale élève Griffondor avec tout déjà près', 
+  16,
+  'Mornilles',
+  'Accessoires',
+  'Griffondor',
+  '../src/assets/images/accessoires/trunkGriffondor.webp'
+), (
+  'Valise pour élève de Serpentard', 
+  'La valise spéciale élève Serpentard avec tout déjà près', 
+  16,
+  'Mornilles',
+  'Accessoires',
+  'Serpentard',
+  '../src/assets/images/accessoires/trunkSerpentard.webp'
+), (
+  'Valise pour élève de Poufsouffle', 
+  'La valise spéciale élève Poufsouffle avec tout déjà près', 
+  16,
+  'Mornilles',
+  'Accessoires',
+  'Poufsouffle',
+  '../src/assets/images/accessoires/trunkPoufsouffle.webp'
+), (
+  'Valise pour élève de Serdaigle', 
+  'La valise spéciale élève Serdaigle avec tout déjà près', 
+  16,
+  'Mornilles',
+  'Accessoires',
+  'Serdaigle',
+  '../src/assets/images/accessoires/trunkSerdaigle.webp'
+), (
+  'Carte du Marauder', 
+  'La carte du Maraudeur est un objet magique conçu par les Maraudeurs. Il s''agit d''un plan détaillé du château de Poudlard, accompagné de la position de chaque personne présente dans l''école.', 
+  10,
+  'Mornilles',
+  'Accessoires',
+  '',
+  '../src/assets/images/accessoires/MaraudersMap.webp'
+), (
+  'Cape pour élève de Griffondor', 
+  'Une cape élégante et abordable pour un élève de Griffondor', 
+  6,
+  'Mornilles',
+  'Vêtements',
+  'Griffondor',
+  '../src/assets/images/vetements/capeGriffondor.webp'
+), (
+  'Cape pour élève de Serpentard', 
+  'Une cape élégante et abordable pour un élève de Serpentard', 
+  6,
+  'Mornilles',
+  'Vêtements',
+  'Serpentard',
+  '../src/assets/images/vetements/capeSerpentard.webp'
+), (
+  'Cape pour élève de Poufsouffle', 
+  'Une cape élégante et abordable pour un élève de Poufsouffle', 
+  6,
+  'Mornilles',
+  'Vêtements',
+  'Poufsouffle',
+  '../src/assets/images/vetements/capePoufsouffle.webp'
+), (
+  'Cape pour élève de Serdaigle', 
+  'Une cape élégante et abordable pour un élève de Serdaigle', 
+  6,
+  'Mornilles',
+  'Vêtements',
+  'Serdaigle',
+  '../src/assets/images/vetements/capeSerdaigle.webp'
 );

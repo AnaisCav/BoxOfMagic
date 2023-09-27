@@ -9,11 +9,9 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      {/* <div className=" bg-almostBlack"> */}
       <Navbar />
       <AppRoutes />
       <Footer />
-      {/* </div> */}
     </BrowserRouter>
   );
 }
