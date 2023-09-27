@@ -292,4 +292,20 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Vêtements',
   'Serdaigle',
   '../src/assets/images/vetements/capeSerdaigle.webp'
+), (
+  'Nimbus 2000', 
+  'Le Nimbus 2000 est un balai de course, le deuxième balais le plus rapide.', 
+  12,
+  'Gallions',
+  'Accessoires',
+  '',
+  '../src/assets/images/accessoires/nimbus2000.png'
+), (
+  'Eclair de Feu', 
+  'L''Éclair de Feuest un balai volant. C''est le balai le plus rapide au monde. ', 
+  18,
+  'Gallions',
+  'Accessoires',
+  '',
+  '../src/assets/images/accessoires/eclairdefeu.png'
 );
