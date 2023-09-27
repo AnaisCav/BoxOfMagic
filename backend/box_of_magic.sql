@@ -12,8 +12,19 @@ CREATE TABLE `product` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `comment` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `author` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `content` text COLLATE utf8mb4_general_ci NOT NULL,
+  `product_id` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `comment_FK` (`product_id`),
+  CONSTRAINT `comment_FK` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 INSERT INTO `product` (title, description, price, money, category, house, image) VALUES (
-  'Baguette en houx, avec plume de phénix', 
+  'Baguette en houx avec plume de phénix', 
   'Cette baguette est en houx, avec une plume de phénix à l''intérieur et mesure 27,5 centimètres. Elle est très souple et facile à manier. Cette baguette a été fabriquée en 1991 ou avant, avec une plume du phénix de Dumbledore, Fumseck. Fumseck a également donné une de ses plumes à une autre baguette, qui se trouve être celle de Voldemort. Les baguettes des deux ennemis sont jumelles, ainsi, leurs propriétaire peuvent se blesser l''un et l''autre mais pas se tuer.', 
   9,
   'Gallions',
@@ -37,7 +48,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/baguettes/bellatrix.webp'
 ), (
-  'Baguette en frênee avec crin de licorne', 
+  'Baguette en frêne avec crin de licorne', 
   'Cette baguette magique est en frêne, mesure 30,5 centimètres, avec à l''intérieur de crin de licorne. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
   8,
   'Gallions',
@@ -77,7 +88,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/baguettes/fred.webp'
 ), (
-  'Baguette en bois de frêne avec un crin de licorne. ', 
+  'Baguette en bois de frêne avec un crin de licorne', 
   'Cette baguette est en bois de frêne et contient un crin de licorne. Elle mesure 27,75 centimètres. Elle est très rigide et difficile à manier.', 
   5,
   'Gallions',
@@ -93,7 +104,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/baguettes/ginny.webp'
 ), (
-  'Baguette en vigne avec un crin de licorne. ', 
+  'Baguette en vigne avec un crin de licorne', 
   'Cette baguette est en vigne et contient un crin de licorne. Elle mesure 32,75 centimètres. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
   7,
   'Gallions',
@@ -109,7 +120,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/baguettes/lupin.webp'
 ), (
-  'Baguette en sapin avec ventricule de dragon. ', 
+  'Baguette en sapin avec ventricule de dragon', 
   'Cette baguette est en sapin, avec du ventricule de dragon à l''intérieur et mesure 23,75 centimètres. Elle est rigide.', 
   9,
   'Gallions',
@@ -125,7 +136,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/baguettes/narcissa.webp'
 ), (
-  'Baguette en bois de cerisier avec crin de licorne. ', 
+  'Baguette en bois de cerisier avec crin de licorne', 
   'Cette baguette est en bois de cerisier avec crin de licorne à l''intérieur et mesure 33,02 centimètres. Elle est souple.', 
   9,
   'Gallions',
@@ -157,7 +168,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/baguettes/ron.webp'
 ), (
-  'Baguette en bois de cèdre. ', 
+  'Baguette en bois de cèdre', 
   'Cette baguette est en bois de cèdre et mesure 26 centimètres. Elle est rigide et difficile à manier.', 
   4,
   'Gallions',
@@ -309,3 +320,11 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '',
   '../src/assets/images/accessoires/eclairdefeu.png'
 );
+
+INSERT INTO `comment` VALUES (
+  1,
+  'Incroyable !!',
+  'HarryP',
+  'J\'ai eu l\'occasion de la tester, elle est vraiment super !! J\'ai pu réparer ma propre baguette avec cette baguette alors qu\'on m\'avait dit qu\'elle n\'était pas réparable. Je recommande ! Par contre, va falloir la chercher, je ne vous dirais pas où je l\'ai caché...',
+  6
+  );
