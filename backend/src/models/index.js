@@ -33,10 +33,12 @@ pool
 const models = {};
 
 const ProductManager = require("./productManager");
+const CommentManager = require("./commentManager");
 
 models.product = new ProductManager();
 models.product.setDatabase(pool);
-
+models.comment = new CommentManager();
+models.comment.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 

@@ -17,11 +17,13 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="flex flex-wrap gap-12 justify-center my-20">
         {products &&
-          products.map((product) => (
-            <div key={product.id}>
-              <ProductCard product={product} />
-            </div>
-          ))}
+          products
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map((product) => (
+              <div key={product.id}>
+                <ProductCard product={product} />
+              </div>
+            ))}
       </div>
     </div>
   );

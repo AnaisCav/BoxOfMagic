@@ -24,10 +24,11 @@ app.use(
 );
 
 // import and mount the API routes
+const productRouter = require("./routes/product.routes");
+const commentRouter = require("./routes/comment.routes");
 
-const router = require("./router");
-
-app.use(router);
+app.use(productRouter);
+app.use(commentRouter);
 
 // serve the `backend/public` folder for public resources
 
