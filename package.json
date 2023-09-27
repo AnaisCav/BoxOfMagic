@@ -1,14 +1,9 @@
 {
-  "name": "template-fullstack",
+  "name": "boxofmagic",
   "version": "3.0.0",
-  "description": "project template for the React-Express-MySQL cursus in Wild Code School",
-  "homepage": "https://github.com/wildcodeschool/js-template-fullstack#readme",
-  "bugs": {
-    "url": "https://github.com/wildcodeschool/js-template-fullstack/issues"
-  },
+  "description": "Checkpoint 4 Wild Code School - Site e-commerce pour les futures étudiants de Poudlard",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wildcodeschool/js-template-fullstack.git"
+    "type": "git"
   },
   "config": {
     "cli": "npm"
