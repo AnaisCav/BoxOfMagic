@@ -16,24 +16,29 @@ const pool = mysql.createPool({
 
 // try a connection
 
-pool.getConnection().catch(() => {
-  console.warn(
-    "Warning:",
-    "Failed to get a DB connection.",
-    "Did you create a .env file with valid credentials?",
-    "Routes using models won't work as intended"
-  );
-});
+pool
+  .getConnection()
+  .then(() => console.info("Database wired ⚡"))
+  .catch(() => {
+    console.warn(
+      "Warning:",
+      "Failed to get a DB connection.",
+      "Did you create a .env file with valid credentials?",
+      "Routes using models won't work as intended"
+    );
+  });
 
 // declare and fill models: that's where you should register your own managers
 
 const models = {};
 
-const ItemManager = require("./ItemManager");
+const ProductManager = require("./productManager");
+const CommentManager = require("./commentManager");
 
-models.item = new ItemManager();
-models.item.setDatabase(pool);
-
+models.product = new ProductManager();
+models.product.setDatabase(pool);
+models.comment = new CommentManager();
+models.comment.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
