@@ -103,7 +103,7 @@ function Comments({ product }) {
             <div className="flex w-full md:justify-end mt-6">
               <button
                 type="submit"
-                className="bg-brown btn text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown pt-1 w-full md:w-auto lg:w-40 "
+                className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown pt-1 w-full md:w-auto lg:w-40 "
               >
                 Envoyer
               </button>
@@ -151,7 +151,7 @@ function Comments({ product }) {
             <div className="flex w-full md:justify-end mt-6">
               <button
                 type="submit"
-                className="bg-redGrif btn text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif pt-1 w-full md:w-auto lg:w-40 "
+                className="bg-redGrif btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif pt-1 w-full md:w-auto lg:w-40 "
               >
                 Envoyer
               </button>
@@ -199,7 +199,7 @@ function Comments({ product }) {
             <div className="flex w-full md:justify-end mt-6">
               <button
                 type="submit"
-                className="bg-greenSerp btn text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp pt-1 w-full md:w-auto lg:w-40 "
+                className="bg-greenSerp btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp pt-1 w-full md:w-auto lg:w-40 "
               >
                 Envoyer
               </button>
@@ -247,7 +247,7 @@ function Comments({ product }) {
             <div className="flex w-full md:justify-end mt-6">
               <button
                 type="submit"
-                className="bg-yellowPouff btn text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff pt-1 w-full md:w-auto lg:w-40 "
+                className="bg-yellowPouff btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff pt-1 w-full md:w-auto lg:w-40 "
               >
                 Envoyer
               </button>
@@ -295,7 +295,7 @@ function Comments({ product }) {
             <div className="flex w-full md:justify-end mt-6">
               <button
                 type="submit"
-                className="bg-blueSerd btn text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd pt-1 w-full md:w-auto lg:w-40 "
+                className="bg-blueSerd btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd pt-1 w-full md:w-auto lg:w-40 "
               >
                 Envoyer
               </button>
