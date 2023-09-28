@@ -11,7 +11,7 @@ module.exports = {
       lightBlueSerd: "#2c3e78",
       yellowPouff: "#ecb939",
       brown: "#AA8855",
-      almostWhite: "#FEF4DC",
+      almostWhite: "#fcfcfa",
       almostBlack: "#212120",
     },
     fontFamily: {
