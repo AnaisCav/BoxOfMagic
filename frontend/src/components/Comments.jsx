@@ -22,7 +22,7 @@ function Comments() {
       <div>
         {comments &&
           comments.map((comment) => (
-            <CommentCard key={comment.id} comment={comment} />
+            <CommentCard key={comment.comment_id} comment={comment} />
           ))}
       </div>
     </div>
