@@ -21,27 +21,31 @@ function Navbar() {
   return (
     <div className="h-20 md:h-36 bg-blueSerd flex justify-between items-center px-6 md:px-10 xl:px-16 drop-shadow-xl">
       <Link to="/">
-        <h1 className=" font-mono text-brown text-2xl md:text-4xl lg:text-5xl">
+        <h1
+          className={
+            inputIsVisible
+              ? "w-28 md:w-full font-mono text-brown text-2xl md:text-4xl lg:text-5xl"
+              : "font-mono text-brown text-2xl md:text-4xl lg:text-5xl"
+          }
+        >
           Welcome, Wizard !
         </h1>
       </Link>
-      <div className="flex gap-3 md:gap-8 xl:gap-14 p">
+      <div className="flex justify-end gap-3 md:gap-8 xl:gap-14">
         <button
           type="button"
           onClick={() => setInputIsVisible(!inputIsVisible)}
         >
           <img src={loupe} alt="Loupe" className="h-7 md:h-9 lg:h-11" />
         </button>
-        <div
-          className={inputIsVisible ? "flex dropdown-content z-50" : "hidden"}
-        >
+        <div className={inputIsVisible ? "flex dropdown-content" : "hidden"}>
           <div className="dropdown-end">
             <input
               tabIndex={0}
               value={value}
               type="text"
               placeholder="Chercher un article"
-              className="dropdown-end menu menu-sm rounded-full w-80 pl-4 text-xl placeholder:text-brown focus:outline-none focus:ring-0"
+              className="dropdown-end menu menu-sm rounded-full w-28 md:w-52 lg:w-80 md:pl-4 text-xs md:text-xl placeholder:text-brown focus:outline-none focus:ring-0"
               onChange={(e) => setValue(e.target.value)}
             />
             <ul className="dropdown-end absolute">
@@ -50,28 +54,27 @@ function Navbar() {
                   .filter((product) =>
                     product.title.toLowerCase().includes(value.toLowerCase())
                   )
-                  .map(
-                    (product, i) =>
-                      i < 10 && (
-                        <li
-                          className="dropdown-end bg-blueSerd text-brown text-xl p-2 w-80"
-                          key={product.id}
-                        >
-                          <a
-                            href={`/product/${product.id}`}
-                            className="block lg:text-center lg:text-lg z-50"
-                          >
-                            {product.title}
-                          </a>
-                        </li>
-                      )
-                  )}
+                  .map((product) => (
+                    <li
+                      className="dropdown-end bg-blueSerd text-brown p-2 w-28 md:w-52 lg:w-80"
+                      key={product.id}
+                    >
+                      <a
+                        href={`/product/${product.id}`}
+                        className="block lg:text-center lg:text-lg z-50"
+                      >
+                        {product.title}
+                      </a>
+                    </li>
+                  ))}
             </ul>
           </div>
         </div>
 
         <Link to="/basket">
-          <img src={panier} alt="Panier" className="h-7 md:h-9 lg:h-11" />
+          <div className="flex items-center h-full">
+            <img src={panier} alt="Panier" className="h-7 md:h-9 lg:h-11" />
+          </div>
         </Link>
       </div>
     </div>
