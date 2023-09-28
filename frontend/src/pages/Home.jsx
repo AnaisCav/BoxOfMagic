@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 import expressAPI from "../services/expressAPI";
 import ProductCard from "../components/ProductCard";
+
+import arrow from "../assets/images/icones/arrow.png";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -39,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row ">
+    <div id="home" className="flex flex-col lg:flex-row ">
       <div className=" top-0 lg:right-0 md:grid md:grid-cols-2 lg:flex lg:flex-col lg:gap-y-16 lg:w-1/5 px-4 py-8 lg:py-20 lg:pr-4  bg-blueSerd text-brown">
         <div>
           <p className="font-bold mb-4 lg:text-2xl">Trier par :</p>
@@ -107,6 +110,7 @@ export default function Home() {
               <option value="Baguette">Baguettes</option>
               <option value="Bijoux">Bijoux</option>
               <option value="Vêtements">Vêtements</option>
+              <option value="Bonbons">Sucreries</option>
             </select>
           </div>
         </div>
@@ -120,6 +124,7 @@ export default function Home() {
           </button>
         </div>
       </div>
+
       <div className="flex flex-wrap gap-12 justify-center lg:w-4/5 mt-8 mb-20 lg:my-20">
         {products &&
           products
@@ -144,6 +149,16 @@ export default function Home() {
               </div>
             ))}
       </div>
+      <Link
+        to="home"
+        offset={-150}
+        duration={500}
+        spy
+        smooth
+        className="cursor-pointer"
+      >
+        <img src={arrow} alt="" className="fixed bottom-4 right-4 h-16" />
+      </Link>
     </div>
   );
 }
