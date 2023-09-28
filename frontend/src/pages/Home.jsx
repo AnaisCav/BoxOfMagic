@@ -7,7 +7,6 @@ export default function Home() {
   const [products, setProducts] = useState([]);
   const [prixCroissant, setPrixCroissant] = useState(false);
   const [prixDecroissant, setPrixDecroissant] = useState(false);
-  const [az, setAz] = useState(false);
   const [za, setZa] = useState(false);
   const [sortedHouse, setSortedHouse] = useState(false);
   const [sortedCategory, setSortedCategory] = useState(false);
@@ -32,7 +31,6 @@ export default function Home() {
   const resetFilters = () => {
     setFilteredHouse(null);
     setCategory(null);
-    setAz(false);
     setZa(false);
     setPrixCroissant(false);
     setPrixDecroissant(false);
@@ -41,29 +39,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row ">
-      <div className=" md:grid md:grid-cols-2 lg:w-1/5 px-4 py-8 lg:py-20 lg:pr-4 border-b-2 lg:borderb-0 lg:border-r-2 bg-blueSerd text-brown">
+    <div className="flex flex-col lg:flex-row  ">
+      <div className=" top-0 lg:right-0 md:grid md:grid-cols-2 lg:flex lg:flex-col lg:gap-y-16 lg:w-1/5 px-4 py-8 lg:py-20 lg:pr-4  bg-blueSerd text-brown">
         <div>
-          <p className="font-bold mb-4">Trier par :</p>
-          <div className="grid grid-cols-2 lg:flex lg:flex-col lg:gap-4">
-            <div className="grid grid-cols-[100px_75px] lg:grid-cols-2">
-              <label htmlFor="az">A-Z</label>
-              <input
-                type="checkbox"
-                value={az}
-                onChange={() => setAz(!az)}
-                className="h-[14px]"
-              />
-            </div>
-            <div className="grid grid-cols-[100px_75px] lg:grid-cols-2">
-              <label htmlFor="za">Z-A</label>
-              <input
-                type="checkbox"
-                className="h-[14px]"
-                value={za}
-                onChange={() => setZa(!za)}
-              />
-            </div>
+          <p className="font-bold mb-4 lg:text-2xl">Trier par :</p>
+          <div className="grid grid-cols-2 lg:flex lg:flex-col lg:gap-4 lg:text-xl">
             <div className="grid grid-cols-[100px_75px] lg:grid-cols-2">
               <label htmlFor="houses">Maisons</label>
               <input
@@ -100,19 +80,28 @@ export default function Home() {
                 onChange={() => setPrixDecroissant(!prixDecroissant)}
               />
             </div>
+            <div className="grid grid-cols-[100px_75px] lg:grid-cols-2">
+              <label htmlFor="za">Z-A</label>
+              <input
+                type="checkbox"
+                className="h-[14px]"
+                value={za}
+                onChange={() => setZa(!za)}
+              />
+            </div>
           </div>
         </div>
         <div>
-          <p className="font-bold mb-4">Filtres :</p>
-          <div className="flex justify-between items-center">
-            <select onChange={handleHouse}>
+          <p className="font-bold mb-4 mt-4 md:mt-0 lg:text-2xl">Filtres :</p>
+          <div className="flex flex-row lg:flex-col lg:gap-y-6 justify-between items-center lg:items-start lg:text-xl">
+            <select onChange={handleHouse} className="lg:w-full md:pl-2">
               <option value="">Choississez votre maison</option>
               <option value="Griffondor">Griffondor</option>
               <option value="Serpentard">Serpentard</option>
               <option value="Serdaigle">Serdaigle</option>
               <option value="Poufsouffle">Poufsouffle</option>
             </select>
-            <select onChange={handleCategory}>
+            <select onChange={handleCategory} className="lg:w-full md:pl-2">
               <option value="">Choississez la catégorie</option>
               <option value="Accessoires">Accessoires</option>
               <option value="Baguette">Baguettes</option>
@@ -125,7 +114,7 @@ export default function Home() {
           <button
             type="button"
             onClick={resetFilters}
-            className="btn bg-brown text-almostBlack"
+            className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown lg:w-full lg:text-xl"
           >
             Reset
           </button>
@@ -141,7 +130,7 @@ export default function Home() {
             .filter(
               (product) => category === null || product.category === category
             )
-            .sort((a, b) => az && a.title.localeCompare(b.title))
+            .sort((a, b) => a.title.localeCompare(b.title))
             .sort((a, b) => za && b.title.localeCompare(a.title))
             .sort((a, b) => prixCroissant && a.price - b.price)
             .sort((a, b) => prixDecroissant && b.price - a.price)

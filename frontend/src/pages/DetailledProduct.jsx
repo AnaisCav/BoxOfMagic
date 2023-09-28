@@ -70,7 +70,7 @@ function DetailledProduct() {
                 {product.house === "Griffondor" && (
                   <button
                     type="button"
-                    className="bg-redGrif btn --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif text-almostWhite"
+                    className="bg-redGrif btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif text-almostWhite"
                   >
                     Ajouter au panier
                   </button>
@@ -78,7 +78,7 @@ function DetailledProduct() {
                 {product.house === "Serpentard" && (
                   <button
                     type="button"
-                    className=" bg-greenSerp btn text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp"
+                    className=" bg-greenSerp btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp"
                   >
                     Ajouter au panier
                   </button>
@@ -86,7 +86,7 @@ function DetailledProduct() {
                 {product.house === "Serdaigle" && (
                   <button
                     type="button"
-                    className=" bg-blueSerd btn text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd"
+                    className=" bg-blueSerd btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd"
                   >
                     Ajouter au panier
                   </button>
@@ -94,7 +94,7 @@ function DetailledProduct() {
                 {product.house === "Poufsouffle" && (
                   <button
                     type="button"
-                    className=" bg-yellowPouff btn --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff"
+                    className=" bg-yellowPouff btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff"
                   >
                     Ajouter au panier
                   </button>
@@ -102,7 +102,7 @@ function DetailledProduct() {
                 {product.house === "" && (
                   <button
                     type="button"
-                    className="bg-brown btn text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown"
+                    className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown"
                   >
                     Ajouter au panier
                   </button>
