@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 import expressAPI from "../services/expressAPI";
 import Comments from "../components/Comments";
 
 function DetailledProduct() {
   const [product, setProduct] = useState(null);
+  const [quantityToAdd, setQuantityToAdd] = useState(1);
 
   const { id } = useParams();
 
@@ -15,6 +17,24 @@ function DetailledProduct() {
       .then((res) => setProduct(res.data))
       .catch((err) => console.error(err));
   }, []);
+
+  const addToCart = (qty) => {
+    const localProducts =
+      JSON.parse(localStorage.getItem("localProducts")) || [];
+
+    const productIndex = localProducts.findIndex(
+      (item) => item.id === product.id
+    );
+
+    if (productIndex !== -1) {
+      localProducts[productIndex].quantity =
+        Number(localProducts[productIndex].quantity) + Number(qty);
+    } else {
+      localProducts.push({ id: product.id, quantity: Number(qty) });
+    }
+    localStorage.setItem("localProducts", JSON.stringify(localProducts));
+    toast.success("Cet article a bien été ajouté au panier");
+  };
 
   return (
     <div className="my-12 md:mx-16 lg:mx-40 xl:mx-56 2xl:mx-80">
@@ -48,28 +68,40 @@ function DetailledProduct() {
             />
             <div className="lg:ml-16 xl:ml-32 flex flex-col gap-8 text-xl md:text-2xl w-full items-start">
               <div className="flex flex-row md:flex-col gap-8 justify-center md:justify-normal md:items-start w-full">
-                <div className="flex gap-2">
+                <div className="flex gap-2 items-center">
                   <p className="font-bold">Prix : </p>
                   <p>
                     {product.price} {product.money}
                   </p>
                 </div>
                 <div className="flex gap-2 items-center">
-                  <p className="font-bold">Quantité : </p>
-                  <input
-                    type="number"
-                    name=""
-                    min={0}
-                    maxLength={3}
-                    placeholder="00"
-                    className="placeholder:text-base-content w-12"
-                  />
+                  <label htmlFor="quantity" className="font-bold">
+                    Quantité :
+                  </label>
+                  <select
+                    id="quantity"
+                    name="quantity"
+                    value={quantityToAdd}
+                    className="px-2 w-16"
+                    onChange={(e) => setQuantityToAdd(e.target.value)}
+                  >
+                    {Array.from({ length: 5 }, (_, i) => {
+                      const value = i + 1;
+
+                      return (
+                        <option key={value} value={value}>
+                          {value}
+                        </option>
+                      );
+                    })}
+                  </select>
                 </div>
               </div>
               <div className="flex justify-center w-full xl:justify-start mb-12">
                 {product.house === "Griffondor" && (
                   <button
                     type="button"
+                    onClick={() => addToCart(quantityToAdd)}
                     className="bg-redGrif btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif text-almostWhite"
                   >
                     Ajouter au panier
@@ -78,6 +110,7 @@ function DetailledProduct() {
                 {product.house === "Serpentard" && (
                   <button
                     type="button"
+                    onClick={() => addToCart(quantityToAdd)}
                     className=" bg-greenSerp btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp"
                   >
                     Ajouter au panier
@@ -86,6 +119,7 @@ function DetailledProduct() {
                 {product.house === "Serdaigle" && (
                   <button
                     type="button"
+                    onClick={() => addToCart(quantityToAdd)}
                     className=" bg-blueSerd btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd"
                   >
                     Ajouter au panier
@@ -94,6 +128,7 @@ function DetailledProduct() {
                 {product.house === "Poufsouffle" && (
                   <button
                     type="button"
+                    onClick={() => addToCart(quantityToAdd)}
                     className=" bg-yellowPouff btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff"
                   >
                     Ajouter au panier
@@ -102,6 +137,7 @@ function DetailledProduct() {
                 {product.house === "" && (
                   <button
                     type="button"
+                    onClick={() => addToCart(quantityToAdd)}
                     className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown"
                   >
                     Ajouter au panier
@@ -135,6 +171,7 @@ function DetailledProduct() {
           </div>
         </div>
       )}
+      <ToastContainer />
     </div>
   );
 }
