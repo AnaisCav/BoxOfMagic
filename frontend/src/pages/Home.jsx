@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row  ">
+    <div className="flex flex-col lg:flex-row ">
       <div className=" top-0 lg:right-0 md:grid md:grid-cols-2 lg:flex lg:flex-col lg:gap-y-16 lg:w-1/5 px-4 py-8 lg:py-20 lg:pr-4  bg-blueSerd text-brown">
         <div>
           <p className="font-bold mb-4 lg:text-2xl">Trier par :</p>
