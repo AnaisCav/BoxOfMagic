@@ -47,13 +47,15 @@ function CommentCard({
         </div>
       )}
       {product.house === "Griffondor" && (
-        <div className=" flex flex-col gap-3 md:border-lightRedGrif md:border-2 md:p-4 md:rounded-2xl">
+        <div className="flex flex-col gap-3 md:border-redGrif md:border-2 md:p-4 md:rounded-2xl">
           <div className="flex justify-between items-start ">
             <div>
               <p className="font-bold text-xl mb-2">{comment.author}</p>
               <p>{comment.comment_title}</p>
             </div>
-            <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            <button type="button" onClick={handleDelete}>
+              <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            </button>
           </div>
           <div className="border-lightRedGrif border-b-2 my-4" />
 
@@ -61,26 +63,31 @@ function CommentCard({
         </div>
       )}
       {product.house === "Serpentard" && (
-        <div className=" flex flex-col gap-3 md:border-lightGreenSerp md:border-2 md:p-4 md:rounded-2xl">
+        <div className="flex flex-col gap-3 md:border-greenSerp md:border-2 md:p-4 md:rounded-2xl">
           <div className="flex justify-between items-start ">
             <div>
               <p className="font-bold text-xl mb-2">{comment.author}</p>
               <p>{comment.comment_title}</p>
             </div>
-            <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            <button type="button" onClick={handleDelete}>
+              <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            </button>
           </div>
           <div className="border-lightGreenSerp border-b-2 my-4" />
+
           <p className="text-justify md:text-left">{comment.content}</p>
         </div>
       )}
       {product.house === "Serdaigle" && (
-        <div className="flex flex-col gap-3 md:border-lightBlueSerd md:border-2 md:p-4 md:rounded-2xl">
+        <div className="flex flex-col gap-3 md:border-blueSerd md:border-2 md:p-4 md:rounded-2xl">
           <div className="flex justify-between items-start ">
             <div>
               <p className="font-bold text-xl mb-2">{comment.author}</p>
               <p>{comment.comment_title}</p>
             </div>
-            <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            <button type="button" onClick={handleDelete}>
+              <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            </button>
           </div>
           <div className="border-lightBlueSerd border-b-2 my-4" />
 
@@ -94,7 +101,9 @@ function CommentCard({
               <p className="font-bold text-xl mb-2">{comment.author}</p>
               <p>{comment.comment_title}</p>
             </div>
-            <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            <button type="button" onClick={handleDelete}>
+              <img src={corbeille} alt="Icône poubelle" className="h-6" />
+            </button>
           </div>
           <div className="border-yellowPouff border-b-2 my-4" />
 
