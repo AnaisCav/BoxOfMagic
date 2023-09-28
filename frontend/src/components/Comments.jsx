@@ -305,13 +305,17 @@ function Comments({ product }) {
         </div>
       )}
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-4 ">
         {comments &&
           comments.map((comment) => (
             <CommentCard
               key={comment.comment_id}
               comment={comment}
               product={product}
+              comments={comments}
+              setComments={setComments}
+              isUpdated={isUpdated}
+              setIsUpdated={setIsUpdated}
             />
           ))}
       </div>
