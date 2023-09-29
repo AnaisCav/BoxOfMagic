@@ -118,7 +118,7 @@ export default function Home() {
           <button
             type="button"
             onClick={resetFilters}
-            className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown lg:w-full lg:text-xl"
+            className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown w-full md:w-auto lg:w-full lg:text-xl"
           >
             Reset
           </button>

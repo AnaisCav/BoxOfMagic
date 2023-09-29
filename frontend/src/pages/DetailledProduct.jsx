@@ -33,7 +33,7 @@ function DetailledProduct() {
       localProducts.push({ id: product.id, quantity: Number(qty) });
     }
     localStorage.setItem("localProducts", JSON.stringify(localProducts));
-    toast.success("Cet article a bien été ajouté au panier");
+    toast("Cet article a bien été ajouté au panier");
   };
 
   return (
