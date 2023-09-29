@@ -20,23 +20,6 @@ function DetailledProduct() {
 
   const openModal = () => document.getElementById("addToCart").showModal();
 
-  const addToCart = (qty) => {
-    const localProducts =
-      JSON.parse(localStorage.getItem("localProducts")) || [];
-
-    const productIndex = localProducts.findIndex(
-      (item) => item.id === product.id
-    );
-
-    if (productIndex !== -1) {
-      localProducts[productIndex].quantity =
-        Number(localProducts[productIndex].quantity) + Number(qty);
-    } else {
-      localProducts.push({ id: product.id, quantity: Number(qty) });
-    }
-    localStorage.setItem("localProducts", JSON.stringify(localProducts));
-  };
-
   return (
     <div className="my-12 md:mx-16 lg:mx-40 xl:mx-56 2xl:mx-80">
       {product && (
@@ -102,7 +85,7 @@ function DetailledProduct() {
                 {product.house === "Griffondor" && (
                   <button
                     type="button"
-                    onClick={(addToCart(quantityToAdd), openModal)}
+                    onClick={openModal}
                     className="bg-redGrif btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif text-almostWhite"
                   >
                     Ajouter au panier
@@ -111,7 +94,7 @@ function DetailledProduct() {
                 {product.house === "Serpentard" && (
                   <button
                     type="button"
-                    onClick={(addToCart(quantityToAdd), openModal)}
+                    onClick={openModal}
                     className=" bg-greenSerp btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp"
                   >
                     Ajouter au panier
@@ -120,7 +103,7 @@ function DetailledProduct() {
                 {product.house === "Serdaigle" && (
                   <button
                     type="button"
-                    onClick={(addToCart(quantityToAdd), openModal)}
+                    onClick={openModal}
                     className=" bg-blueSerd btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd"
                   >
                     Ajouter au panier
@@ -129,7 +112,7 @@ function DetailledProduct() {
                 {product.house === "Poufsouffle" && (
                   <button
                     type="button"
-                    onClick={(addToCart(quantityToAdd), openModal)}
+                    onClick={openModal}
                     className=" bg-yellowPouff btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff"
                   >
                     Ajouter au panier
@@ -138,7 +121,7 @@ function DetailledProduct() {
                 {product.house === "" && (
                   <button
                     type="button"
-                    onClick={(addToCart(quantityToAdd), openModal)}
+                    onClick={openModal}
                     className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown"
                   >
                     Ajouter au panier
@@ -172,7 +155,7 @@ function DetailledProduct() {
           </div>
         </div>
       )}
-      <ModalAddToCart />
+      <ModalAddToCart product={product} quantityToAdd={quantityToAdd} />
     </div>
   );
 }

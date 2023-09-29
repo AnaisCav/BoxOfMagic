@@ -44,6 +44,9 @@ function Basket() {
     document.getElementById("finaliseModal").showModal();
   };
 
+  const quantity =
+    JSON.parse(localStorage.getItem("localProducts.quantity")) || [];
+
   return (
     <div className="min-h-screen lg:min-h-0 xl:min-h-screen mt-12 lg:my-16 md:mx-16 lg:mx-40 xl:mx-56 2xl:mx-80">
       <h1 className="text-center text-2xl md:text-3xl xl:text-5xl mx-16 md:mx-0">
@@ -53,7 +56,7 @@ function Basket() {
       <div>
         {products && localProducts.length > 0 ? (
           <div className="flex flex-col ">
-            <ul className="">
+            <ul>
               {products.map((product) => (
                 <>
                   <li
@@ -70,8 +73,9 @@ function Basket() {
                       </Link>
                     </div>
                     <div className="text-xl lg:text-3xl flex flex-col gap-8 md:gap-16 mt-8 md:mt-0 md:ml-16">
-                      <p className="">{product.title}</p>
-                      <p className="">
+                      <p>{product.title}</p>
+                      <p>Quantité : {quantity}</p>
+                      <p>
                         Prix : {product.totalPrice.toFixed(2)} {product.money}
                       </p>
                     </div>
@@ -80,7 +84,7 @@ function Basket() {
                 </>
               ))}
               <div className="flex justify-center font-bold md:justify-end text-xl md:text-2xl xl:text-3xl my-16">
-                <p className="">Total commande : {total.toFixed(2)} Gallions</p>
+                <p>Total commande : {total.toFixed(2)} Gallions</p>
               </div>
               <div className="flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between mb-4 md:mb-10">
                 <button
