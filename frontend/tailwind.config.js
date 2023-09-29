@@ -4,11 +4,14 @@ module.exports = {
   theme: {
     colors: {
       redGrif: "#740001",
+      lightRedGrif: "#ae0001",
       greenSerp: "#1a472a",
+      lightGreenSerp: "#2a623d",
       blueSerd: "#222f5b",
+      lightBlueSerd: "#2c3e78",
       yellowPouff: "#ecb939",
       brown: "#AA8855",
-      almostWhite: "#FEF4DC",
+      almostWhite: "#fcfcfa",
       almostBlack: "#212120",
     },
     fontFamily: {

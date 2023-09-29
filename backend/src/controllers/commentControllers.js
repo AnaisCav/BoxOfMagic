@@ -47,8 +47,6 @@ const browseByProductId = (req, res) => {
 const edit = (req, res) => {
   const comment = req.body;
 
-  // TODO validations (length, format...)
-
   comment.id = parseInt(req.params.id, 10);
 
   models.comment
@@ -69,12 +67,10 @@ const edit = (req, res) => {
 const add = (req, res) => {
   const comment = req.body;
 
-  // TODO validations (length, format...)
-
   models.comment
     .insert(comment)
     .then(([result]) => {
-      res.location(`/comments/${result.insertId}`).sendStatus(201);
+      res.location(`/comments/${result.product_id}`).sendStatus(201);
     })
     .catch((err) => {
       console.error(err);

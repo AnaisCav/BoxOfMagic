@@ -28,7 +28,7 @@ class commentManager extends AbstractManager {
 
   findAllByProductId(id) {
     return this.database.query(
-      `SELECT product.title AS product_title, ${this.table}.title AS comment_title, ${this.table}.author, ${this.table}.content FROM product JOIN ${this.table} ON product.id = ${this.table}.product_id WHERE product.id = ?`,
+      `SELECT product.title AS product_title, ${this.table}.title AS comment_title, ${this.table}.id AS comment_id, ${this.table}.author, ${this.table}.content FROM product JOIN ${this.table} ON product.id = ${this.table}.product_id WHERE product.id = ?`,
       [id]
     );
   }

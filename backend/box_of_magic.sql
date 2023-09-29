@@ -313,12 +313,180 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   '../src/assets/images/accessoires/nimbus2000.png'
 ), (
   'Eclair de Feu', 
-  'L''Éclair de Feuest un balai volant. C''est le balai le plus rapide au monde. ', 
+  'L''Éclair de Feu est un balai volant. C''est le balai le plus rapide au monde. ', 
   18,
   'Gallions',
   'Accessoires',
   '',
   '../src/assets/images/accessoires/eclairdefeu.png'
+), (
+  'Bonnet Griffondor', 
+  'Un joli bonnet pour un élève de Griffondor', 
+  6,
+  'Noises',
+  'Vêtements',
+  'Griffondor',
+  '../src/assets/images/vetements/bonnetGriffondor.webp'
+), (
+  'Bonnet Serpentard', 
+  'Un joli bonnet pour un élève de Serpentard', 
+  6,
+  'Noises',
+  'Vêtements',
+  'Serpentard',
+  '../src/assets/images/vetements/bonnetSerpentard.webp'
+), (
+  'Bonnet Serdaigle', 
+  'Un joli bonnet pour un élève de Serdaigle', 
+  6,
+  'Noises',
+  'Vêtements',
+  'Serdaigle',
+  '../src/assets/images/vetements/bonnetSerdaigle.webp'
+), (
+  'Bonnet Poufsouffle', 
+  'Un joli bonnet pour un élève de Poufsouffle', 
+  6,
+  'Noises',
+  'Vêtements',
+  'Poufsouffle',
+  '../src/assets/images/vetements/bonnetPoufsouffle.webp'
+), (
+  'Écharpe Griffondor', 
+  'Une jolie écharpe pour un élève de Griffondor', 
+  10,
+  'Noises',
+  'Vêtements',
+  'Griffondor',
+  '../src/assets/images/vetements/echarpeGriffondor.webp'
+), (
+  'Écharpe Serpentard', 
+  'Une jolie écharpe pour un élève de Serpentard', 
+  10,
+  'Noises',
+  'Vêtements',
+  'Serpentard',
+  '../src/assets/images/vetements/echarpeSerpentard.webp'
+), (
+  'Écharpe Serdaigle', 
+  'Une jolie écharpe pour un élève de Serdaigle', 
+  10,
+  'Noises',
+  'Vêtements',
+  'Serdaigle',
+  '../src/assets/images/vetements/echarpeSerdaigle.webp'
+), (
+  'Écharpe Poufsouffle', 
+  'Une jolie écharpe pour un élève de Poufsouffle', 
+  10,
+  'Noises',
+  'Vêtements',
+  'Poufsouffle',
+  '../src/assets/images/vetements/echarpePoufsouffle.webp'
+), (
+  'Pull Poufsouffle', 
+  'Un joli pull pour un élève de Poufsouffle', 
+  18,
+  'Noises',
+  'Vêtements',
+  'Poufsouffle',
+  '../src/assets/images/vetements/pullPoufsouffle.webp'
+), (
+  'Pull Griffondor', 
+  'Un joli pull pour un élève de Griffondor', 
+  18,
+  'Noises',
+  'Vêtements',
+  'Griffondor',
+  '../src/assets/images/vetements/pullGriffondor.webp'
+), (
+  'Pull Serdaigle', 
+  'Un joli pull pour un élève de Serdaigle', 
+  18,
+  'Noises',
+  'Vêtements',
+  'Serdaigle',
+  '../src/assets/images/vetements/pullSerdaigle.webp'
+), (
+  'Pull Serpentard', 
+  'Un joli pull pour un élève de Serpentard', 
+  18,
+  'Noises',
+  'Vêtements',
+  'Serpentard',
+  '../src/assets/images/vetements/pullSerpentard.webp'
+), (
+  'Chaussettes Serpentard', 
+  'Trois paires de chausettes pour un élève de Serpentard', 
+  9,
+  'Noises',
+  'Vêtements',
+  'Serpentard',
+  '../src/assets/images/vetements/socksSerpentard.webp'
+), (
+  'Chaussettes Serdaigle', 
+  'Trois paires de chausettes pour un élève de Serdaigle', 
+  9,
+  'Noises',
+  'Vêtements',
+  'Serdaigle',
+  '../src/assets/images/vetements/socksSerdaigle.webp'
+), (
+  'Chaussettes Griffondor', 
+  'Trois paires de chausettes pour un élève de Griffondor', 
+  9,
+  'Noises',
+  'Vêtements',
+  'Griffondor',
+  '../src/assets/images/vetements/socksGriffondor.webp'
+), (
+  'Chaussettes Poufsouffle', 
+  'Trois paires de chausettes pour un élève de Poufsouffle', 
+  9,
+  'Noises',
+  'Vêtements',
+  'Poufsouffle',
+  '../src/assets/images/vetements/socksPoufsouffle.webp'
+), (
+  'Dragées surprises Bertie Crochue', 
+  'Oh... crotte de nez"! Méfiez-vous des dragées surprises de Bertie Crochue. Leurs goûts vont du citron à la cire d''oreille, ou encore de la pomme verte au goût de poubelle. Mais qu''est-ce que c''est rigolo! ', 
+  2,
+  'Noises',
+  'Bonbons',
+  '',
+  '../src/assets/images/bonbons/dragees.webp'
+), (
+  'Bière au Beurre', 
+  'Tel un vrai sorcier, n''hésite pas sur ta boisson de fête. La bière au beurre est un soda au caramel sans alcool qui te fera traverser le monde magique.', 
+  4,
+  'Noises',
+  'Bonbons',
+  '',
+  '../src/assets/images/bonbons/butterbeer.webp'
+), (
+  'Chocogrenouille', 
+  'Régalez-vous avec les chocogrenouilles en chocolat plein de Harry Potter, au riz soufflé, avec carte de collection à l''intérieur.', 
+  2,
+  'Noises',
+  'Bonbons',
+  '',
+  '../src/assets/images/bonbons/chocogrenouilles.webp'
+), (
+  'Bonbons chocolat de chez Honeydukes', 
+  'Régalez-vous avec ces bonbons au chocolat de chez Honeydukes.', 
+  2,
+  'Noises',
+  'Bonbons',
+  '',
+  '../src/assets/images/bonbons/honeydukes-chocolate.webp'
+), (
+  'Bonbons Bière au Beurre de chez Honeydukes', 
+  'Régalez-vous avec ces bonbons au goût et en forme de bière au beurre de chez Honeydukes.', 
+  2,
+  'Noises',
+  'Bonbons',
+  '',
+  '../src/assets/images/bonbons/honeydukes-honeycomb.webp'
 );
 
 INSERT INTO `comment` VALUES (
