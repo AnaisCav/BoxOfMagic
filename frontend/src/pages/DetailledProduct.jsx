@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
 
 import expressAPI from "../services/expressAPI";
 import Comments from "../components/Comments";
+import ModalAddToCart from "../components/ModalAddToCart";
 
 function DetailledProduct() {
   const [product, setProduct] = useState(null);
@@ -17,6 +17,8 @@ function DetailledProduct() {
       .then((res) => setProduct(res.data))
       .catch((err) => console.error(err));
   }, []);
+
+  const openModal = () => document.getElementById("addToCart").showModal();
 
   const addToCart = (qty) => {
     const localProducts =
@@ -33,7 +35,6 @@ function DetailledProduct() {
       localProducts.push({ id: product.id, quantity: Number(qty) });
     }
     localStorage.setItem("localProducts", JSON.stringify(localProducts));
-    toast("Cet article a bien été ajouté au panier");
   };
 
   return (
@@ -101,7 +102,7 @@ function DetailledProduct() {
                 {product.house === "Griffondor" && (
                   <button
                     type="button"
-                    onClick={() => addToCart(quantityToAdd)}
+                    onClick={(addToCart(quantityToAdd), openModal)}
                     className="bg-redGrif btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-redGrif text-almostWhite"
                   >
                     Ajouter au panier
@@ -110,7 +111,7 @@ function DetailledProduct() {
                 {product.house === "Serpentard" && (
                   <button
                     type="button"
-                    onClick={() => addToCart(quantityToAdd)}
+                    onClick={(addToCart(quantityToAdd), openModal)}
                     className=" bg-greenSerp btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-greenSerp"
                   >
                     Ajouter au panier
@@ -119,7 +120,7 @@ function DetailledProduct() {
                 {product.house === "Serdaigle" && (
                   <button
                     type="button"
-                    onClick={() => addToCart(quantityToAdd)}
+                    onClick={(addToCart(quantityToAdd), openModal)}
                     className=" bg-blueSerd btn border-0 text-almostWhite --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blueSerd"
                   >
                     Ajouter au panier
@@ -128,7 +129,7 @@ function DetailledProduct() {
                 {product.house === "Poufsouffle" && (
                   <button
                     type="button"
-                    onClick={() => addToCart(quantityToAdd)}
+                    onClick={(addToCart(quantityToAdd), openModal)}
                     className=" bg-yellowPouff btn border-0 --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellowPouff"
                   >
                     Ajouter au panier
@@ -137,7 +138,7 @@ function DetailledProduct() {
                 {product.house === "" && (
                   <button
                     type="button"
-                    onClick={() => addToCart(quantityToAdd)}
+                    onClick={(addToCart(quantityToAdd), openModal)}
                     className="bg-brown btn border-0 text-almostBlack --transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-brown"
                   >
                     Ajouter au panier
@@ -171,7 +172,7 @@ function DetailledProduct() {
           </div>
         </div>
       )}
-      <ToastContainer />
+      <ModalAddToCart />
     </div>
   );
 }
