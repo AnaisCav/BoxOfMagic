@@ -26,7 +26,7 @@ function CommentCard({
       .then((res) => {
         if (res.status === 204) {
           setComments(
-            comments.filter((item) => item.id !== comment.comment_id)
+            comments.filter((item) => item.comment_id !== comment.comment_id)
           );
           setIsUpdated(!isUpdated);
         }

@@ -68,7 +68,7 @@ function Navbar() {
                     >
                       <a
                         href={`/product/${product.id}`}
-                        className="block lg:text-center lg:text-lg z-50"
+                        className="block lg:text-center lg:text-lg z-50 hover:font-bold"
                       >
                         {product.title}
                       </a>
