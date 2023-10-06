@@ -5,7 +5,6 @@ import expressAPI from "../services/expressAPI";
 
 import loupe from "../../public/images/icones/loupe.png";
 import panier from "../../public/images/icones/panier.png";
-import sound from "../assets/musics/HedwigsTheme.mp3";
 
 function Navbar() {
   const [products, setProducts] = useState([]);
@@ -32,12 +31,7 @@ function Navbar() {
           Welcome, Wizard !
         </h1>
       </Link>
-      <div className="hidden lg:flex justify-center w-56 xl:w-96">
-        <audio src={sound} controls autoPlay className="w-full">
-          <track kind="captions" />
-          Musique
-        </audio>
-      </div>
+
       <div className="flex justify-end gap-3 md:gap-8 xl:gap-14">
         <button
           type="button"

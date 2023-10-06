@@ -97,14 +97,17 @@ export default function Home() {
         <div>
           <p className="font-bold mb-4 mt-4 md:mt-0 lg:text-2xl">Filtres :</p>
           <div className="flex flex-row lg:flex-col lg:gap-y-6 justify-between items-center lg:items-start lg:text-xl">
-            <select onChange={handleHouse} className="lg:w-full md:pl-2">
+            <select onChange={handleHouse} className="w-32 md:w-full md:pl-2">
               <option value="">Choississez votre maison</option>
               <option value="Griffondor">Griffondor</option>
               <option value="Serpentard">Serpentard</option>
               <option value="Serdaigle">Serdaigle</option>
               <option value="Poufsouffle">Poufsouffle</option>
             </select>
-            <select onChange={handleCategory} className="lg:w-full md:pl-2">
+            <select
+              onChange={handleCategory}
+              className="w-32 md:w-full md:pl-2"
+            >
               <option value="">Choississez la catégorie</option>
               <option value="Accessoires">Accessoires</option>
               <option value="Baguette">Baguettes</option>
