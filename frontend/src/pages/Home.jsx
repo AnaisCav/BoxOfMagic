@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import expressAPI from "../services/expressAPI";
 import ProductCard from "../components/ProductCard";
 
-import arrow from "../assets/images/icones/arrow.png";
+import arrow from "../../public/images/icones/arrow.png";
 
 export default function Home() {
   const [products, setProducts] = useState([]);

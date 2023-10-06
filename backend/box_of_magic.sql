@@ -30,7 +30,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/hp.webp'
+  '/images/baguettes/hp.webp'
 ), (
   'Baguette en vigne avec ventricule de dragon', 
   'Cette baguette est en vigne, avec du ventricule de dragon à l''intérieur et mesure 27,30 centimètres', 
@@ -38,7 +38,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/hermione.webp'
+  '/images/baguettes/hermione.webp'
 ), (
   'Baguette en noyer avec ventricule de dragon', 
   'Cette baguette est en noyer, contient du ventricule de dragon et mesure 31,8 centimètres. Elle est rigide mais facile à manier', 
@@ -46,7 +46,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/bellatrix.webp'
+  '/images/baguettes/bellatrix.webp'
 ), (
   'Baguette en frêne avec crin de licorne', 
   'Cette baguette magique est en frêne, mesure 30,5 centimètres, avec à l''intérieur de crin de licorne. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -54,7 +54,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/cedric.webp'
+  '/images/baguettes/cedric.webp'
 ), (
   'Baguette en bois d''aubépine avec crin de licorne', 
   'Cette baguette est en bois d''aubépine, mesure 25 cm, est relativement souple et contient un crin de licorne. ', 
@@ -62,7 +62,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/draco.webp'
+  '/images/baguettes/draco.webp'
 ), (
   'Baguette de Sureau', 
   'Cette baguette est constituée d''un bois sombre provenant d''un arbuste, le sureau, et contient un crin de queue de Sombral. Elle mesure 38 centimètres et son manche est agrémenté de deux petites sphères très proches l''une de l''autre. La Baguette de Sureau, également appelée le Bâton de la Mort, la Baguette de la Destinée, ou la Baguette de Sambucus, est l''une des trois Reliques de la Mort. Il s''agit d''une baguette particulièrement puissante qui a appartenu à de nombreux mages noirs et qui est connue pour son histoire particulièrement sanglante, ses admirateurs s''entretuaient au fil des siècles dans l''espoir d''obtenir la baguette qui, selon la légende, aurait été arrachée à la Mort elle-même.', 
@@ -70,7 +70,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/dumbledore.webp'
+  '/images/baguettes/dumbledore.webp'
 ), (
   'Baguette en bois de rose avec un cheveu de vélane', 
   'Cette baguette est en bois de rose, avec à l''intérieur un cheveu de vélane et mesure 23,75 centimètres. Elle est très souple et facile à manier.', 
@@ -78,7 +78,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/fleur.webp'
+  '/images/baguettes/fleur.webp'
 ), (
   'Baguette en bois d''aubépine avec du ventricule de dragon', 
   'Cette baguette est constituée d''un bois d''aubépine, avec à l''intérieur du ventricule de dragon. Elle mesure 26,30 centimètres et est très souple.', 
@@ -86,7 +86,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/fred.webp'
+  '/images/baguettes/fred.webp'
 ), (
   'Baguette en bois de frêne avec un crin de licorne', 
   'Cette baguette est en bois de frêne et contient un crin de licorne. Elle mesure 27,75 centimètres. Elle est très rigide et difficile à manier.', 
@@ -94,7 +94,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/george.webp'
+  '/images/baguettes/george.webp'
 ), (
   'Baguette en bois d''if', 
   'Cette baguette est constituée d''un bois d''if. Elle mesure 23,30 centimètres et est très souple et facile à manier.', 
@@ -102,7 +102,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/ginny.webp'
+  '/images/baguettes/ginny.webp'
 ), (
   'Baguette en vigne avec un crin de licorne', 
   'Cette baguette est en vigne et contient un crin de licorne. Elle mesure 32,75 centimètres. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -110,7 +110,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/luna.webp'
+  '/images/baguettes/luna.webp'
 ), (
   'Baguette en cyprès avec crin de licorne', 
   'Cette baguette est en cyprès avec un crin de licorne à l''intérieur. Elle mesure 25,75 centimètres et est très souple. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -118,7 +118,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/lupin.webp'
+  '/images/baguettes/lupin.webp'
 ), (
   'Baguette en sapin avec ventricule de dragon', 
   'Cette baguette est en sapin, avec du ventricule de dragon à l''intérieur et mesure 23,75 centimètres. Elle est rigide.', 
@@ -126,7 +126,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/mcgonagall.webp'
+  '/images/baguettes/mcgonagall.webp'
 ), (
   'Baguette en bois d''if avec crin de licorne', 
   'Cette baguette est en bois d''if avec un crin de licorne à l''intérieur. Elle mesure 25,75 centimètres et est très souple. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -134,7 +134,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/narcissa.webp'
+  '/images/baguettes/narcissa.webp'
 ), (
   'Baguette en bois de cerisier avec crin de licorne', 
   'Cette baguette est en bois de cerisier avec crin de licorne à l''intérieur et mesure 33,02 centimètres. Elle est souple.', 
@@ -142,7 +142,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/neville.webp'
+  '/images/baguettes/neville.webp'
 ), (
   'Baguette en cyprès avec ventricule de dragon', 
   'Cette baguette est en cyprès avec ventricule de dragon à l''intérieur. Elle mesure 24,75 centimètres et est très souple. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -150,7 +150,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/newt.webp'
+  '/images/baguettes/newt.webp'
 ), (
   'Baguette en bois d''amourette avec corne de Basilic', 
   'Cette baguette est en bois de d''amourette et contient une corne de Basilic en guise de cœur. La baguette a été fabriquée par Salazar Serpentard lui-même au xe siècle.', 
@@ -158,7 +158,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/nymphadora.webp'
+  '/images/baguettes/nymphadora.webp'
 ), (
   'Baguette en saule avec crin de licorne', 
   'Cette baguette est en saule avec crin de licorne à l''intérieur. Elle mesure 35 centimètres et est très souple. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -166,7 +166,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/ron.webp'
+  '/images/baguettes/ron.webp'
 ), (
   'Baguette en bois de cèdre', 
   'Cette baguette est en bois de cèdre et mesure 26 centimètres. Elle est rigide et difficile à manier.', 
@@ -174,7 +174,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/snape.webp'
+  '/images/baguettes/snape.webp'
 ), (
   'Baguette en roseau avec moustache de Fléreur', 
   'Cette baguette est en roseau avec moustache de Fléreur. Elle mesure 35 centimètres et est très souple. Cette baguette magique a été fabriquée par Garrick Ollivander.', 
@@ -182,7 +182,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/sirius.webp'
+  '/images/baguettes/sirius.webp'
 ), (
   'Baguette en if avec plume de Phénix', 
   'Cette baguette est en if, avec une plume de phénix à l''intérieur et mesure 33.75 centimètres La baguette a été fabriquée par Salazar Serpentard lui-même au xe siècle.', 
@@ -190,7 +190,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Baguette',
   '',
-  '../src/assets/images/baguettes/voldemort.webp'
+  '/images/baguettes/voldemort.webp'
 ), (
   'Bague de Gaunt', 
   'La bague de Gaunt est sertie d''une pierre noire, qui est en fait une des trois Reliques de la Mort. Elle est frappée d''un triangle, d''un rond et un trait, symbolisant les Reliques. La bague se transmettait de génération en génération depuis le deuxième frère Peverell, celui des trois frères qui demanda à la Mort une pierre permettant de parler avec les esprits défunts.', 
@@ -198,7 +198,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Bijoux',
   'Serpentard',
-  '../src/assets/images/bijoux/ring.webp'
+  '/images/bijoux/ring.webp'
 ), (
   'Médaillon de Salazar Serpentard', 
   'Le médaillon appartenait à Salazar Serpentard, l''un des fondateurs de Poudlard. La famille Gaunt, descendants de Salazar Serpentard, a en sa possession ce médaillon, pour la grande fierté d''Elvis Marvolo Gaunt.', 
@@ -206,7 +206,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Bijoux',
   'Serpentard',
-  '../src/assets/images/bijoux/locket.webp'
+  '/images/bijoux/locket.webp'
 ), (
   'Retourneur de Temps', 
   'Le Retourneur de Temps est un objet en forme de sablier permettant de retourner dans le temps. Un Retourneur de Temps doit être tourné un nombre de fois équivalent au nombre d''heures qui doivent être remontées, le maximum étant cinq heures. Au-delà de cette limite, le voyageur est en danger. Son utilisation est régie par de nombreuses lois et des sanctions sévères sont prévues pour éviter l''abus de leur utilisation.', 
@@ -214,7 +214,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Bijoux',
   '',
-  '../src/assets/images/bijoux/timeturner.webp'
+  '/images/bijoux/timeturner.webp'
 ), (
   'Pendentif des Reliques de la Mort', 
   'Le pendentif des Reliques de la Mort est un bijou représentant la Baguette de Sureau, la Pierre de Résurrection et la Cape d''Invisibilité. Le pendentif est composé d''une chaîne en or avec à son extrémité le symbole des Reliques de la Mort, un triangle dans lequel on retrouve un cercle et un trait vertical partant de la base du triangle et allant jusqu''au sommet du cercle.', 
@@ -222,7 +222,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Bijoux',
   '',
-  '../src/assets/images/bijoux/deathlyhallows.webp'
+  '/images/bijoux/deathlyhallows.webp'
 ), (
   'Valise', 
   'La valise classique pour pouvoir amener tout ce qu''il faut pour passer une bonne année scolaire', 
@@ -230,7 +230,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Accessoires',
   '',
-  '../src/assets/images/accessoires/trunk.webp'
+  '/images/accessoires/trunk.webp'
 ), (
   'Valise pour élève de Griffondor', 
   'La valise spéciale élève Griffondor avec tout déjà près', 
@@ -238,7 +238,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Accessoires',
   'Griffondor',
-  '../src/assets/images/accessoires/trunkGriffondor.webp'
+  '/images/accessoires/trunkGriffondor.webp'
 ), (
   'Valise pour élève de Serpentard', 
   'La valise spéciale élève Serpentard avec tout déjà près', 
@@ -246,7 +246,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Accessoires',
   'Serpentard',
-  '../src/assets/images/accessoires/trunkSerpentard.webp'
+  '/images/accessoires/trunkSerpentard.webp'
 ), (
   'Valise pour élève de Poufsouffle', 
   'La valise spéciale élève Poufsouffle avec tout déjà près', 
@@ -254,7 +254,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Accessoires',
   'Poufsouffle',
-  '../src/assets/images/accessoires/trunkPoufsouffle.webp'
+  '/images/accessoires/trunkPoufsouffle.webp'
 ), (
   'Valise pour élève de Serdaigle', 
   'La valise spéciale élève Serdaigle avec tout déjà près', 
@@ -262,7 +262,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Accessoires',
   'Serdaigle',
-  '../src/assets/images/accessoires/trunkSerdaigle.webp'
+  '/images/accessoires/trunkSerdaigle.webp'
 ), (
   'Carte du Marauder', 
   'La carte du Maraudeur est un objet magique conçu par les Maraudeurs. Il s''agit d''un plan détaillé du château de Poudlard, accompagné de la position de chaque personne présente dans l''école.', 
@@ -270,7 +270,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Accessoires',
   '',
-  '../src/assets/images/accessoires/MaraudersMap.webp'
+  '/images/accessoires/MaraudersMap.webp'
 ), (
   'Cape pour élève de Griffondor', 
   'Une cape élégante et abordable pour un élève de Griffondor', 
@@ -278,7 +278,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Vêtements',
   'Griffondor',
-  '../src/assets/images/vetements/capeGriffondor.webp'
+  '/images/vetements/capeGriffondor.webp'
 ), (
   'Cape pour élève de Serpentard', 
   'Une cape élégante et abordable pour un élève de Serpentard', 
@@ -286,7 +286,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Vêtements',
   'Serpentard',
-  '../src/assets/images/vetements/capeSerpentard.webp'
+  '/images/vetements/capeSerpentard.webp'
 ), (
   'Cape pour élève de Poufsouffle', 
   'Une cape élégante et abordable pour un élève de Poufsouffle', 
@@ -294,7 +294,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Vêtements',
   'Poufsouffle',
-  '../src/assets/images/vetements/capePoufsouffle.webp'
+  '/images/vetements/capePoufsouffle.webp'
 ), (
   'Cape pour élève de Serdaigle', 
   'Une cape élégante et abordable pour un élève de Serdaigle', 
@@ -302,7 +302,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Mornilles',
   'Vêtements',
   'Serdaigle',
-  '../src/assets/images/vetements/capeSerdaigle.webp'
+  '/images/vetements/capeSerdaigle.webp'
 ), (
   'Nimbus 2000', 
   'Le Nimbus 2000 est un balai de course, le deuxième balais le plus rapide.', 
@@ -310,7 +310,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Accessoires',
   '',
-  '../src/assets/images/accessoires/nimbus2000.png'
+  '/images/accessoires/nimbus2000.png'
 ), (
   'Eclair de Feu', 
   'L''Éclair de Feu est un balai volant. C''est le balai le plus rapide au monde. ', 
@@ -318,7 +318,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Gallions',
   'Accessoires',
   '',
-  '../src/assets/images/accessoires/eclairdefeu.png'
+  '/images/accessoires/eclairdefeu.png'
 ), (
   'Bonnet Griffondor', 
   'Un joli bonnet pour un élève de Griffondor', 
@@ -326,7 +326,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Griffondor',
-  '../src/assets/images/vetements/bonnetGriffondor.webp'
+  '/images/vetements/bonnetGriffondor.webp'
 ), (
   'Bonnet Serpentard', 
   'Un joli bonnet pour un élève de Serpentard', 
@@ -334,7 +334,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serpentard',
-  '../src/assets/images/vetements/bonnetSerpentard.webp'
+  '/images/vetements/bonnetSerpentard.webp'
 ), (
   'Bonnet Serdaigle', 
   'Un joli bonnet pour un élève de Serdaigle', 
@@ -342,7 +342,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serdaigle',
-  '../src/assets/images/vetements/bonnetSerdaigle.webp'
+  '/images/vetements/bonnetSerdaigle.webp'
 ), (
   'Bonnet Poufsouffle', 
   'Un joli bonnet pour un élève de Poufsouffle', 
@@ -350,7 +350,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Poufsouffle',
-  '../src/assets/images/vetements/bonnetPoufsouffle.webp'
+  '/images/vetements/bonnetPoufsouffle.webp'
 ), (
   'Écharpe Griffondor', 
   'Une jolie écharpe pour un élève de Griffondor', 
@@ -358,7 +358,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Griffondor',
-  '../src/assets/images/vetements/echarpeGriffondor.webp'
+  '/images/vetements/echarpeGriffondor.webp'
 ), (
   'Écharpe Serpentard', 
   'Une jolie écharpe pour un élève de Serpentard', 
@@ -366,7 +366,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serpentard',
-  '../src/assets/images/vetements/echarpeSerpentard.webp'
+  '/images/vetements/echarpeSerpentard.webp'
 ), (
   'Écharpe Serdaigle', 
   'Une jolie écharpe pour un élève de Serdaigle', 
@@ -374,7 +374,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serdaigle',
-  '../src/assets/images/vetements/echarpeSerdaigle.webp'
+  '/images/vetements/echarpeSerdaigle.webp'
 ), (
   'Écharpe Poufsouffle', 
   'Une jolie écharpe pour un élève de Poufsouffle', 
@@ -382,7 +382,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Poufsouffle',
-  '../src/assets/images/vetements/echarpePoufsouffle.webp'
+  '/images/vetements/echarpePoufsouffle.webp'
 ), (
   'Pull Poufsouffle', 
   'Un joli pull pour un élève de Poufsouffle', 
@@ -390,7 +390,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Poufsouffle',
-  '../src/assets/images/vetements/pullPoufsouffle.webp'
+  '/images/vetements/pullPoufsouffle.webp'
 ), (
   'Pull Griffondor', 
   'Un joli pull pour un élève de Griffondor', 
@@ -398,7 +398,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Griffondor',
-  '../src/assets/images/vetements/pullGriffondor.webp'
+  '/images/vetements/pullGriffondor.webp'
 ), (
   'Pull Serdaigle', 
   'Un joli pull pour un élève de Serdaigle', 
@@ -406,7 +406,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serdaigle',
-  '../src/assets/images/vetements/pullSerdaigle.webp'
+  '/images/vetements/pullSerdaigle.webp'
 ), (
   'Pull Serpentard', 
   'Un joli pull pour un élève de Serpentard', 
@@ -414,7 +414,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serpentard',
-  '../src/assets/images/vetements/pullSerpentard.webp'
+  '/images/vetements/pullSerpentard.webp'
 ), (
   'Chaussettes Serpentard', 
   'Trois paires de chausettes pour un élève de Serpentard', 
@@ -422,7 +422,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serpentard',
-  '../src/assets/images/vetements/socksSerpentard.webp'
+  '/images/vetements/socksSerpentard.webp'
 ), (
   'Chaussettes Serdaigle', 
   'Trois paires de chausettes pour un élève de Serdaigle', 
@@ -430,7 +430,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Serdaigle',
-  '../src/assets/images/vetements/socksSerdaigle.webp'
+  '/images/vetements/socksSerdaigle.webp'
 ), (
   'Chaussettes Griffondor', 
   'Trois paires de chausettes pour un élève de Griffondor', 
@@ -438,7 +438,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Griffondor',
-  '../src/assets/images/vetements/socksGriffondor.webp'
+  '/images/vetements/socksGriffondor.webp'
 ), (
   'Chaussettes Poufsouffle', 
   'Trois paires de chausettes pour un élève de Poufsouffle', 
@@ -446,7 +446,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Vêtements',
   'Poufsouffle',
-  '../src/assets/images/vetements/socksPoufsouffle.webp'
+  '/images/vetements/socksPoufsouffle.webp'
 ), (
   'Dragées surprises Bertie Crochue', 
   'Oh... crotte de nez"! Méfiez-vous des dragées surprises de Bertie Crochue. Leurs goûts vont du citron à la cire d''oreille, ou encore de la pomme verte au goût de poubelle. Mais qu''est-ce que c''est rigolo! ', 
@@ -454,7 +454,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Bonbons',
   '',
-  '../src/assets/images/bonbons/dragees.webp'
+  '/images/bonbons/dragees.webp'
 ), (
   'Bière au Beurre', 
   'Tel un vrai sorcier, n''hésite pas sur ta boisson de fête. La bière au beurre est un soda au caramel sans alcool qui te fera traverser le monde magique.', 
@@ -462,7 +462,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Bonbons',
   '',
-  '../src/assets/images/bonbons/butterbeer.webp'
+  '/images/bonbons/butterbeer.webp'
 ), (
   'Chocogrenouille', 
   'Régalez-vous avec les chocogrenouilles en chocolat plein de Harry Potter, au riz soufflé, avec carte de collection à l''intérieur.', 
@@ -470,7 +470,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Bonbons',
   '',
-  '../src/assets/images/bonbons/chocogrenouilles.webp'
+  '/images/bonbons/chocogrenouilles.webp'
 ), (
   'Bonbons chocolat de chez Honeydukes', 
   'Régalez-vous avec ces bonbons au chocolat de chez Honeydukes.', 
@@ -478,7 +478,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Bonbons',
   '',
-  '../src/assets/images/bonbons/honeydukes-chocolate.webp'
+  '/images/bonbons/honeydukes-chocolate.webp'
 ), (
   'Bonbons Bière au Beurre de chez Honeydukes', 
   'Régalez-vous avec ces bonbons au goût et en forme de bière au beurre de chez Honeydukes.', 
@@ -486,7 +486,7 @@ INSERT INTO `product` (title, description, price, money, category, house, image)
   'Noises',
   'Bonbons',
   '',
-  '../src/assets/images/bonbons/honeydukes-honeycomb.webp'
+  '/images/bonbons/honeydukes-honeycomb.webp'
 );
 
 INSERT INTO `comment` VALUES (

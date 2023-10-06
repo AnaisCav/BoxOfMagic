@@ -3,9 +3,9 @@ import { useState } from "react";
 
 import expressAPI from "../services/expressAPI";
 
-import corbeille from "../assets/images/icones/corbeille.png";
-import modify from "../assets/images/icones/modify.png";
-import save from "../assets/images/icones/save.png";
+import corbeille from "../../public/images/icones/corbeille.png";
+import modify from "../../public/images/icones/modify.png";
+import save from "../../public/images/icones/save.png";
 
 function CommentCard({
   comment,

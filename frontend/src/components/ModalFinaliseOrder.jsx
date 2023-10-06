@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import hibou from "../assets/images/icones/hedwige.png";
+import hibou from "../../public/images/icones/hedwige.png";
 
 function ModalFinaliseOrder() {
   const navigate = useNavigate();

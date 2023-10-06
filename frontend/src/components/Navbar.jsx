@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 
 import expressAPI from "../services/expressAPI";
 
-import loupe from "../assets/images/icones/loupe.png";
-import panier from "../assets/images/icones/panier.png";
+import loupe from "../../public/images/icones/loupe.png";
+import panier from "../../public/images/icones/panier.png";
 import sound from "../assets/musics/HedwigsTheme.mp3";
 
 function Navbar() {
